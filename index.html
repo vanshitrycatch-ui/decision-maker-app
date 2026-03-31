@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decision Maker — Spin the Wheel</title>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<canvas id="confetti-canvas"></canvas>
+
+<header>
+  <h1>🎡 Decision Maker</h1>
+  <p>Can't decide? Let the wheel choose for you!</p>
+</header>
+
+<div class="main-layout">
+  <!-- WHEEL -->
+  <div class="wheel-section">
+    <div class="wheel-wrapper" id="wheelWrapper">
+      <canvas id="wheel" width="380" height="380"></canvas>
+      <div class="pointer"></div>
+      <div class="hub" id="hubBtn" title="Spin!"></div>
+    </div>
+
+    <button class="spin-btn" id="spinBtn">SPIN IT! 🎲</button>
+
+    <div class="result-banner" id="resultBanner">
+      <div class="label">🏆 The Decision Is...</div>
+      <div class="winner" id="winnerText"></div>
+    </div>
+  </div>
+
+  <!-- OPTIONS PANEL -->
+  <div class="options-panel">
+    <div class="panel-title">⚙️ Wheel Options</div>
+
+    <div class="add-row">
+      <input type="text" id="optionInput" placeholder="Add an option..." maxlength="30" />
+      <button class="add-btn" id="addBtn" title="Add">+</button>
+    </div>
+
+    <div class="count-bar">
+      <span>Options</span>
+      <span class="count-badge" id="countBadge">0</span>
+    </div>
+
+    <div class="options-list" id="optionsList">
+      <div class="empty-note">Add some options above to get started! ✨</div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
